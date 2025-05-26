@@ -28,6 +28,7 @@ We strongly recommend using **conda** for environment management.
 ```bash
 conda create -n cl-nflow python=3.8
 conda activate cl-nflow
+```
 
 #### Step 2: Install base dependencies
 
