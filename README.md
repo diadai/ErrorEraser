@@ -36,7 +36,18 @@ conda activate cl-nflow
 conda install pytorch=2.4.1 torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
 conda install numpy pandas scikit-learn tqdm matplotlib seaborn -c conda-forge
 ```
+## 🚀 Getting Started
 
-### ✏️ Reference
+After setting up the environment and downloading the dataset (e.g., CIFAR-10), you can start training or evaluation by simply running:
+
+```bash
+python main.py
+````
+This will launch the entire continual learning pipeline using the configuration defined in `init_parameters.py`.
+
+> ✅ **Note:** Make sure the dataset (e.g., CIFAR-10) is downloaded or available in the specified path before running the code.
+
+
+## ✏️ Reference
 The normalizaing flow code refers to [AF-FCL](https://github.com/zaocan666/AF-FCL).
 Many thanks to the original authors!
