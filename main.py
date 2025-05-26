@@ -13,7 +13,7 @@ torch.cuda.empty_cache()
 
 def main(args):
 
-    f = open(f'./results/mis_cifar10_task1/{args.method}_cifar10_ori.txt'.format(args.method),'a')
+    f = open(f'./{args.method}_cifar10_ori.txt'.format(args.method),'a')
     print('forget_rate:{}'.format(args.forget_rate),'epoch:{}'.format(args.epochs),'forget_epoch:{}'.format(args.forget_epoch),'precent:{}'.format(args.precent))
     f.write('forget_rate:{}'.format(args.forget_rate))
     f.write(' epoch:{}'.format(args.epochs))
