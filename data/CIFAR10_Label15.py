@@ -28,9 +28,9 @@ def get(args, pc_valid=0.10):
         std = (0.2470, 0.2435, 0.2616)
 
         dat = {}
-        dat['train'] = datasets.CIFAR10(cf10_dir, train=True, download=False, transform=transforms.Compose(
+        dat['train'] = datasets.CIFAR10(cf10_dir, train=True, download=True, transform=transforms.Compose(
             [transforms.ToTensor(), transforms.Normalize(mean, std)]))
-        dat['test'] = datasets.CIFAR10(cf10_dir, train=False, download=False, transform=transforms.Compose(
+        dat['test'] = datasets.CIFAR10(cf10_dir, train=False, download=True, transform=transforms.Compose(
             [transforms.ToTensor(), transforms.Normalize(mean, std)]))
         for n in range(num_task):
             data[n] = {}
