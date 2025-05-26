@@ -30,9 +30,12 @@ conda create -n cl-nflow python=3.8
 conda activate cl-nflow
 
 #### Step 2: Install base dependencies
+
+```bash
 conda install pytorch=2.4.1 torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
 conda install numpy pandas scikit-learn tqdm matplotlib seaborn -c conda-forge
+```
 
 ### ✏️ Reference
-The code structure is based on the code in [AF-FCL](https://github.com/zaocan666/AF-FCL).
+The normalizaing flow code refers to [AF-FCL](https://github.com/zaocan666/AF-FCL).
 Many thanks to the original authors!
